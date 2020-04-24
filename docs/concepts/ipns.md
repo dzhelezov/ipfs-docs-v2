@@ -6,7 +6,11 @@ description: Learn about the InterPlanetary Name System (IPNS) and how it can be
 
 # InterPlanetary Name System (IPNS)
 
-The InterPlanetary Name System (IPNS) is a system for creating and updating mutable links to IPFS content. Since objects in IPFS are [content addressed](/concepts/content-addressing/), an object's address changes every time an object's content changes. That’s useful for a variety of things, but it makes it hard to get the latest version of something.
+The InterPlanetary Name System (IPNS) is a system for creating and updating mutable links to IPFS content. Since objects in IPFS are [content addressed](/concepts/content-addressing/), an object's address changes every time an object's content changes. That’s useful for a variety of things, but it makes it hard to get the latest version of something. For example, a website location like `https://gateway.ipfs.io/ipfs/QmVMxjouRQCA2QykL5Rc77DvjfaX6m8NL6RyHXRTaZ9iya/` is going to be changed every time the website is updated. Another major UX issue is that dealing with raw IPFS hashes is, well, slightly inconvenient for humans.
+
+The general goal of IPNS is to provide a transport-agnostic and self-sertifying way to resolve a name to the most recent content. This is similar to the role DNS is playing in the network-centeric world by resolving hostnames to the actual IP addresses.
+
+# IPNS
 
 A _name_ in IPNS is the [hash](/concepts/hashing) of a public key. It is associated with a record containing information about the hash it links to that is signed by the corresponding private key. New records can be signed and published at any time.
 
