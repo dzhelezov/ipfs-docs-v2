@@ -40,7 +40,7 @@ ipfs.name.publish(addr, function (err, res) {
 })
 ```
 
-In the same way, you can republish a new version of your website under the same address. By default, `ipfs.name.publish` will use the Peer ID.
+In the same way, you can republish a new version of your website under the same address. By default, `ipfs.name.publish` will use the Peer ID for updating the IPNS record.
 
 ## Alternatives to IPNS
 
